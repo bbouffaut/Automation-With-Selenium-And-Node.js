@@ -1,5 +1,3 @@
 module.exports = {
-    searchInputSelectorId: 'lst-ib',
-    searchButtonSelectorName: 'btnK',
-    resultConfirmationId: 'resultStats'
+    seConnecterButtonClassName: 'icn-bar__item__title'
 };
