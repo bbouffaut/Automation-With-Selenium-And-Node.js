@@ -1,5 +1,7 @@
 const { describe, it, after, before } = require('mocha');
 const Page = require('../lib/homePage');
+const conf = require('../utils/conf');
+
 
 const chai = require('chai');
 const expect = chai.expect;
@@ -11,7 +13,7 @@ process.on('unhandledRejection', () => {});
 (async function example() {
     try {
         describe ('Google search automated testing', async function () {
-            this.timeout(50000);
+            this.timeout(conf.waitPageTimeout);
             let driver, page;
 
             beforeEach (async () => {
